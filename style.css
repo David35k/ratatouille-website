@@ -1,3 +1,47 @@
 .logo {
     height: 10vh;
 }
+
+.title-image {
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+}
+
+nav {
+    z-index: 100;
+    background-color: rgba(131, 131, 131, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.nav-link {
+    font-size: 1.5em;
+}
+
+.navbar-toggler {
+    background-color: rgba(66, 66, 66, 0.3);
+    backdrop-filter: blur(50px);
+}
+
+.welcome-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    color: white;
+    font-size: 10em;
+    background-color: rgba(66, 66, 66, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.big-thing {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 100;
+    top: 600px;
+}
