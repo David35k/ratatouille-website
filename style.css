@@ -1,17 +1,51 @@
+* {
+    scroll-behavior: smooth;
+}
+
 .logo {
     height: 10vh;
 }
 
 .title-image {
     position: absolute;
-    top: 0px;
+    top: 0;
     z-index: 0;
 }
 
+body {
+    overflow-y: hidden;
+}
+
+main {
+    /* background: white; */
+    width: 100vw;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    scroll-snap-align: start;
+    height: 100vh;
+}
+
+#cover {
+    background-image: url("images/food.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#sec1 {
+    background: blue;
+}
+
 nav {
+    position: fixed;
+    top: 0px;
     z-index: 100;
     background-color: rgba(131, 131, 131, 0.3);
     backdrop-filter: blur(10px);
+    width: 100vw;
 }
 
 .nav-link {
@@ -24,11 +58,7 @@ nav {
 }
 
 .welcome-text {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%);
-    z-index: 100;
+
     color: white;
     font-size: 10em;
     background-color: rgba(66, 66, 66, 0.3);
@@ -37,11 +67,10 @@ nav {
     padding: 10px;
 }
 
-.big-thing {
-    background-color: black;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    z-index: 100;
-    top: 600px;
+#welcome-text-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
