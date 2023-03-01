@@ -3,7 +3,8 @@
 }
 
 .logo {
-    height: 10vh;
+    height: 7vh;
+    margin-left: 1.5vw;
 }
 
 .title-image {
@@ -17,7 +18,6 @@ body {
 }
 
 main {
-    /* background: white; */
     width: 100vw;
     overflow-y: scroll;
     height: 100vh;
@@ -35,16 +35,9 @@ section {
     background-size: cover;
 }
 
-#sec1 {
-    background: blue;
-}
-
-nav {
-    position: fixed;
-    top: 0px;
-    z-index: 100;
-    background-color: rgba(131, 131, 131, 0.3);
-    backdrop-filter: blur(10px);
+nav {   
+    background-color: white;
+    backdrop-filter: blur(10px) !important;
     width: 100vw;
 }
 
@@ -52,13 +45,12 @@ nav {
     font-size: 1.5em;
 }
 
-.navbar-toggler {
-    background-color: rgba(66, 66, 66, 0.3);
-    backdrop-filter: blur(50px);
+ul {
+    display: flex;
+    justify-content: flex-end !important;
 }
 
 .welcome-text {
-
     color: white;
     font-size: 10em;
     background-color: rgba(66, 66, 66, 0.3);
@@ -73,4 +65,32 @@ nav {
     justify-content: center;
     width: 100%;
     height: 100%;
+}
+
+#sec1 {
+    background: white;
+}
+
+.sec1-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+.slide-item-thing {
+    display: flex;
+}
+
+.slide-item-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.slide-title {
+    margin-bottom: 5vh;
 }

@@ -14,11 +14,11 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark background-epic">
+    <nav class="navbar navbar-expand-lg navbar-light background-epic">
         <div class="container-fluid">
             <div class="navbar brand">
                 <img src="images/la_ratatouille.png" class="img-fluid logo">
-                <h1 class="p-3 text-white">La Ratatouille</h1>
+                <h1 class="p-3">La Ratatouille</h1>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -44,8 +44,6 @@
         </div>
     </nav>
 
-    
-    
     <main>
         <section id="cover">
             <div id="welcome-text-div">
@@ -53,10 +51,60 @@
             </div>
         </section>
         <section id="sec1">
-            <h1>sup</h1>
+            <div class="sec1-text">
+                <h1>About</h1>
+                <p>After the closure of the world-class restaurant Gusteau’s, head chefs Colette Tatou and Alfredo
+                    Linguini-Gusteau, along with a private collaborator who prefers to be known only as The Little Chef,
+                    founded a new bistro in the heart of Paris where they continue to produce new culinary creations. La
+                    Ratatouille is proudly supported by renowned food critic Anton Ego.</p>
+            </div>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="slide-item-thing">
+                            <img src="images/linguini.jpg" class="img-fluid h-100" alt="linguini">
+                            <div class="slide-item-text">
+                                <h2 class="slide-title">Alfredo Linguini-Gusteau</h2>
+                                <p>Linguini is the only son of celebrated chef Auguste Gusteau and Renata Linguini. Full
+                                    of
+                                    false modesty, he insists that he has no talent at all, and is no good with food or
+                                    words. Once the drawcard of Gusteau’s restaurant, he now manages the front-of-house,
+                                    and
+                                    has been known to wait tables whilst wearing roller-skates.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/tatou.jpg" class="img-fluid" alt="tatou">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/la_ratatouille.png" class="img-fluid" alt="the little chef">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
         </section>
         <section id="sec2">
-            <h1>sup</h1>
+            <h1>Menu</h1>
         </section>
     </main>
 
